@@ -53,7 +53,7 @@ public class CharactersRecyclerViewAdapter extends RecyclerView.Adapter<CommonVi
         holder.mView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mListener.onClickCharacter(mValues.get(position));
+                mListener.onClickCharacter(view,mValues.get(position));
             }
         });
     }
