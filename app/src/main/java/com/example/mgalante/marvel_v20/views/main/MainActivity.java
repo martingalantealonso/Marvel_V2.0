@@ -10,6 +10,7 @@ import android.support.v7.widget.RecyclerView;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
+import android.view.ViewConfiguration;
 import android.view.Window;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -129,13 +130,15 @@ public class MainActivity extends BaseActivity implements MainContract.View, Cha
         Gson gson = new Gson();
         String json = gson.toJson(item);
 
-
         Intent i = new Intent(getBaseContext(), ShowCharacter.class);
         i.putExtra(EXTRA_CHARACTER, json);
 
-        ActivityOptionsCompat options =
-                ActivityOptionsCompat.makeSceneTransitionAnimation(this, holderPair, navPair, statusPair);
-
+        ActivityOptionsCompat options;
+        if (ViewConfiguration.get(getApplicationContext()).hasPermanentMenuKey()) {
+            options = ActivityOptionsCompat.makeSceneTransitionAnimation(this, holderPair, navPair, statusPair);
+        } else {
+            options = ActivityOptionsCompat.makeSceneTransitionAnimation(this, holderPair, statusPair);
+        }
         ActivityCompat.startActivity(this, i, options.toBundle());
 
     }
