@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Marvel_V2.0</string>
+    <string name="escribe_el_nombre">Escribe el nombre...</string>
+    <string name="busca_tu_superh_roe">Busca tu superhéroe</string>
+    <string name="sin_resultados">Sin resultados</string>
+    <string name="links">Links</string>
+    <string name="detalle">Details</string>
+    <string name="wiki">Wiki</string>
+    <string name="comiclink">Comics Links</string>
+    <string name="recursos">Recursos</string>
+</resources>
