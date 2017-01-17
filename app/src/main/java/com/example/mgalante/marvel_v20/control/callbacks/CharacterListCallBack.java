@@ -1,5 +1,7 @@
 package com.example.mgalante.marvel_v20.control.callbacks;
 
+import android.view.View;
+
 import com.example.mgalante.marvel_v20.api.entities.Characters;
 
 /**
@@ -7,5 +9,5 @@ import com.example.mgalante.marvel_v20.api.entities.Characters;
  */
 
 public interface CharacterListCallBack {
-    void onClickCharacter(Characters item);
+    void onClickCharacter(View v, Characters item);
 }
