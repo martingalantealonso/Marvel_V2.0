@@ -57,16 +57,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:drawableLeft="@android:drawable/ic_menu_myplaces"
-            android:text="@string/detalle" />
+            android:text="@string/detalle"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored" />
 
         <Button
             android:id="@+id/wiki"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:drawableLeft="@android:drawable/ic_menu_myplaces"
-            android:text="@string/wiki" />
+            android:text="@string/wiki"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored" />
 
 
         <Button
@@ -74,8 +74,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:drawableLeft="@android:drawable/ic_menu_myplaces"
-            android:text="@string/comiclink" />
+            android:text="@string/comiclink"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored" />
 
     </LinearLayout>
 
