@@ -9,10 +9,10 @@ import android.content.Context;
 
 public class ServiceMarvel {
 
-    private static apiService service=null;
+    private static apiServer service = null;
 
-    public static apiService getService(Context context){
-        service=ServiceGenerator.createService(apiService.class,context);
-        return  service;
+    public static apiServer getService(Context context) {
+        service = ServiceGenerator.createService(apiServer.class, context);
+        return service;
     }
 }
